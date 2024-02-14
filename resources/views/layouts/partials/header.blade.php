@@ -20,7 +20,7 @@
         </button>
         <div class="hidden w-full md:block" id="navbar-default">
             <ul
-                class="flex flex-col justify-between py-8 mt-4 bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:bg-white uppercase font-medium border-b-2 border-b-primary md:text-sm lg:text-lg">
+                class="flex flex-col justify-between py-8 mt-4 bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:bg-white uppercase font-medium border-b-2 border-b-primary md:text-sm lg:text-lg items-center">
                 <li>
                     <a href="#"
                         class="block py-2 px-3 text-white bg-primary rounded md:bg-transparent md:text-primary md:p-0 dark:text-white"
