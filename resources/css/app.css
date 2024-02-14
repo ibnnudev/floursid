@@ -10,3 +10,10 @@
         #df8db0 100%
     );
 }
+
+.custom-shadow {
+    /* add background 3 color: 00abaa, 9dd3cf, df8db0 */
+    background: linear-gradient(90deg, #00abaa 0%, #9dd3cf 47.4%, #df8db0 100%);
+    /* add blur 20px */
+    filter: blur(20px);
+}

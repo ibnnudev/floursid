@@ -8,6 +8,8 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+    @stack('css-internal')
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
@@ -32,7 +34,7 @@
 
 <body class="font-sans text-primary antialiased h-screen">
     @include('layouts.partials.header')
-    <div>
+    <div class="mt-12">
         {{ $slot }}
     </div>
 
@@ -45,6 +47,8 @@
 
     <!-- Flowbite JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
+    @stack('js-internal')
 </body>
 
 </html>
