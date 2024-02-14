@@ -1,6 +1,5 @@
  <!-- Footer -->
-
- <footer class="bg-white" aria-labelledby="footer-heading">
+ <footer class="bg-white hidden md:block" aria-labelledby="footer-heading">
      <h2 id="footer-heading" class="sr-only">Footer</h2>
      <div class="px-5 py-12 mx-auto max-w-7xl lg:py-16">
          <div class="grid grid-cols-1 lg:grid-cols-3 gap-24 mb-8">
@@ -66,7 +65,7 @@
                      Vita, rispetto e trasformazione dal 1969.
                  </p>
              </div>
-             <div class="col-span-2 grid grid-cols-2 items-center text-primary">
+             <div class="col-span-2 grid md:grid-cols-2 gap-10 items-center text-primary">
                  <div>
                      <p class="text-lg font-semibold">info@fluorsid.com</p>
                  </div>
@@ -88,5 +87,81 @@
          </div>
      </div>
  </footer>
-
  <!-- end footer -->
+
+ <div class="block md:hidden px-5 max-w-7xl">
+     <img src="{{ asset('assets/images/logo.png') }}" class="w-auto h-7" alt="">
+     <div class="text-primary mt-8 mb-8">
+         <p class="font-semibold mb-8 text-sm">@2023 FLUORSID</p>
+         <p>Headquarters</p>
+         <p class="font-semibold text-lg max-w-fit mt-2">Milano, <br>Italia Via Flavio Vegezio, 1220149
+             Milano
+             (MI)
+         </p>
+     </div>
+     <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white"
+         data-inactive-classes="text-gray-500 dark:text-gray-400">
+         <h2 id="accordion-flush-heading-1">
+             <button type="button"
+                 class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                 data-accordion-target="#accordion-flush-body-1" aria-expanded="true"
+                 aria-controls="accordion-flush-body-1">
+                 <span>Chi Siamo</span>
+                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                         d="M9 5 5 1 1 5" />
+                 </svg>
+             </button>
+         </h2>
+         <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+             <div class="py-5 border-b border-gray-200 dark:border-gray-700 space-y-4">
+                 <div><a href="">I Nostri Valori</a></div>
+                 <div><a href="">Dove Siamo</a></div>
+                 <div><a href="">Persone</a></div>
+                 <div><a href="">Career</a></div>
+             </div>
+         </div>
+         <h2 id="accordion-flush-heading-2">
+             <button type="button"
+                 class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                 data-accordion-target="#accordion-flush-body-2" aria-expanded="false"
+                 aria-controls="accordion-flush-body-2">
+                 <span>Cosa Facciamo</span>
+                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                         d="M9 5 5 1 1 5" />
+                 </svg>
+             </button>
+         </h2>
+         <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+             <div class="py-5 border-b border-gray-200 dark:border-gray-700 space-y-4">
+                 <div><a href="">Chimica</a></div>
+                 <div><a href="">Metalli</a></div>
+             </div>
+         </div>
+         <h2 id="accordion-flush-heading-3">
+             <button type="button"
+                 class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                 data-accordion-target="#accordion-flush-body-3" aria-expanded="false"
+                 aria-controls="accordion-flush-body-3">
+                 <span>Sostenibilita</span>
+                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                         d="M9 5 5 1 1 5" />
+                 </svg>
+             </button>
+         </h2>
+         <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+             <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                 <div class="py-5 border-b border-gray-200 dark:border-gray-700 space-y-4">
+                     <div><a href="">Bilancio Di Sostenibiita</a></div>
+                     <div><a href="">Certificazioni</a></div>
+                     <div><a href="">Le Nostre Politiche</a></div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
